@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <title>Spock Rock Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topTitle">
+            <h2>Rock Paper Scissors </h2>
+        </div>
+        <div class="mainpart">
+          <div class="computerContainer">
+            <h3>computer - <span id="computerScore">0</span><span id="computerChoice">--- Choice</span></h3>
+            <div class="choices1">
+                <i class="far fa-hand-rock fa-3x" id="computerRock"></i>
+                <i class="far fa-hand-paper fa-3x" id="computerPaper"></i>
+                <i class="far fa-hand-scissors fa-3x" id="computerScissors"></i>
+            </div>
+          </div>
+          <div class="youContainer">
+            <h3>You - <span id="playerScore">0</span><span id="yourChoice">--- Choice</span></h3>
+            <div class="choices2">
+                <i class="far fa-hand-rock fa-3x" onclick="select('rock')" id="playerRock"></i>
+                <i class="far fa-hand-paper fa-3x" onclick="select('paper')" id="playerPaper"></i>
+                <i class="far fa-hand-scissors fa-3x" onclick="select('scissors')" id="playerScissors"></i>
+            </div>
+          </div>
+          <div class="redo">
+             <i class="fas fa-redo fa-lg" id="resetBtn"></i>
+          </div>
+          <h1 id="resultText">You Won!</h1>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
